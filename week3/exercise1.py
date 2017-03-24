@@ -7,12 +7,13 @@ from __future__ import division
 from __future__ import print_function
 
 
-def loop_ranger(start, stop=None, step=1):
+def loop_ranger(start0, stop=None, step=1):
     """Return a list of numbers between start and stop in steps of step.
 
     Do this using any method apart from just using range()
     """
-    pass
+    list_of_numbers = range(10)
+    return(list_of_numbers)
 
 
 def lone_ranger(start, stop, step):
@@ -47,7 +48,16 @@ def stubborn_asker(low, high):
     Ask for a number, and if the response is outside the bounds keep asking
     until you get a number that you think is OK
     """
-    pass
+    message = "Give me a number between {low}, and {high}:".format(low=low,
+                                                                   high=high)
+    while True:
+        input_number = int(raw_input(message))
+        if low < input_number < high:
+            print("Thanks! Looks right.")
+        else:
+            print("{input} isnt between {low}, and {high}:".format(input=input_number,
+                                                                   low=low,
+                                                                   high=high))
 
 
 def not_number_rejector(message):
@@ -57,7 +67,14 @@ def not_number_rejector(message):
     "six", "8!") then throw it out and ask for an actual number.
     When you do get a number, return it.
     """
-    pass
+    message1 = "Give me any number"
+
+    while True:
+        input_any_number = int(raw_input(message1))
+        if -99999999999999 < input_any_number < 99999999999999:
+            print("Thanks! That is in fact a number.")
+        else:
+            print("{input} is not a number, try again:").format(input=input_any_number)
 
 
 def super_asker(low, high):
@@ -66,7 +83,11 @@ def super_asker(low, high):
     Combine stubborn_asker and not_number_rejector to make a function
     that does it all!
     """
-    pass
+
+
+
+
+
 
 if __name__ == "__main__":
     # this section does a quick test on your results and prints them nicely.
