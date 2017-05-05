@@ -72,19 +72,19 @@ def put_behind_bars(input_string="very naughty boy"):
     pass
 
 
-def pet_filter(letter="a"):
-    """Return a list of animals with `letter` in their name."""
-    pets = ["dog", "goat", "pig", "sheep", "cattle", "zebu", "cat", "chicken",
-            "guinea pig", "donkey", "duck", "water buffalo",
-            "western honey bee", "dromedary camel", "horse", "silkmoth",
-            "pigeon", "goose", "yak", "bactrian camel", "llama", "alpaca",
-            "guineafowl", "ferret", "muscovy duck", "barbary dove",
-            "bali cattle", "gayal", "turkey", "goldfish", "rabbit", "koi",
-            "canary", "society finch", "fancy mouse", "siamese fighting fish",
-            "fancy rat and lab rat", "mink", "red fox", "hedgehog", "guppy"]
-
-    return (letter.pets)
-    pass
+# def pet_filter(letter="a"):
+#     """Return a list of animals with `letter` in their name."""
+#    pets = ["dog", "goat", "pig", "sheep", "cattle", "zebu", "cat", "chicken",
+#             "guinea pig", "donkey", "duck", "water buffalo",
+#             "western honey bee", "dromedary camel", "horse", "silkmoth",
+#             "pigeon", "goose", "yak", "bactrian camel", "llama", "alpaca",
+#             "guineafowl", "ferret", "muscovy duck", "barbary dove",
+#             "bali cattle", "gayal", "turkey", "goldfish", "rabbit", "koi",
+#            "canary", "society finch", "fancy mouse", "siamese fighting fish",
+#             "fancy rat and lab rat", "mink", "red fox", "hedgehog", "guppy"]
+#
+#     return (letter.pets)
+#     pass
 
 
 def best_letter_for_pets():
